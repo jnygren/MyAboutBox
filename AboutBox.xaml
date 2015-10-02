@@ -1,0 +1,21 @@
+﻿<Window x:Class="MyAboutBox.AboutBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About MyAboutBox" Height="450" Width="525">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="x" />
+            <StackPanel Grid.Column="1">
+                <TextBlock x:Name="AppName" Text="{Binding Source=AssemblyTitle}" FontSize="20"></TextBlock>
+            </StackPanel>
+        </Grid>
+
+        <ListBox>
+
+        </ListBox>
+    </DockPanel>
+</Window>
